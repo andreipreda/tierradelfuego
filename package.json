@@ -1,0 +1,80 @@
+{
+  "name": "tierradelfuego",
+  "version": "1.0.0",
+  "description": "react, redux, webpack & friends basic setup",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0",
+    "npm:": ">=3.8.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreipreda/tierradelfuego.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreipreda/tierradelfuego/issues"
+  },
+  "scripts": {
+    "test": "ava test --tap",
+    "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "lint": "node_modules/eslint/bin/eslint.js app** test**",
+    "build": "rm -rf dist && node_modules/webpack/bin/webpack.js -p --config ./webpack.prod.config.js && cp index.html dist/"
+  },
+  "homepage": "https://github.com/andreipreda/tierradelfuego",
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "forecast",
+    "redux-saga",
+    "stateless"
+  ],
+  "author": "Andrei Preda <andrei.preda@live.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "babel-runtime": "^6.9.2",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.1.1",
+    "postcss-loader": "^0.9.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "classnames": "^2.2.5",
+    "eslint": "^2.9.0",
+    "fetch-jsonp": "^1.0.0",
+    "flexboxgrid": "^6.3.0",
+    "moment": "^2.14.1",
+    "normalize.css": "^4.2.0",
+    "querystring": "^0.2.0",
+    "ramda": "^0.21.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.2",
+    "rebass": "^0.3.0",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-saga": "^0.11.0",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "ava": {
+    "require": "babel-register",
+    "babel": "inherit"
+  }
+}
