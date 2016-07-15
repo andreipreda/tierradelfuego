@@ -1,6 +1,4 @@
-# coconut
-
-##Tierra del fuego - Ushuaia forecast
+# Tierra del fuego - Ushuaia weather forecast exercise
 
 
 Goal of this repository it's to provide an implementation of 
@@ -33,5 +31,5 @@ open [http://localhost:8080](http://localhost:8080)
 
 MIT
 
-![tierradelfuago](http://www.clipartbest.com/cliparts/aTe/pKL/aTepKLyT4.png)
+![tierradelfuago](https://s-media-cache-ak0.pinimg.com/236x/9d/8b/47/9d8b47cc107b4896590fcc108194d643.jpg)
 
