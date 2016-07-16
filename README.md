@@ -22,7 +22,7 @@ open [http://localhost:8080](http://localhost:8080)
 
 ```npm test```
 
-**Lint (uses mainly airbnb es6 style)**
+**Lint (uses mainly [airbnb es6 style guide](https://github.com/airbnb/javascript))**
 
 ```npm run lint```
 
