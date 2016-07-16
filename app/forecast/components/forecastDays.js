@@ -11,16 +11,17 @@ const WeatherCard = (weatherObj, key) =>
     key={key}
   >
     <Divider />
-    <Text bold>
-      {weatherObj.main}
-    </Text>
     <Badge
       pill
+      mb={1}
       rounded
       theme={badgeTypes[weatherObj.main]}
     >
-      {weatherObj.description}
+      {weatherObj.main}
     </Badge>
+    <Text small>
+      {weatherObj.description}
+    </Text>
   </Container>;
 
 const ThreeHoursCard = (itemObj, key) => {
